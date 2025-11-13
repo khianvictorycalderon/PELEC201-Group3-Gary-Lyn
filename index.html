@@ -3,12 +3,13 @@
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Gary-Lyn: Lirio's House of Decor</title>
     <link rel="icon" href="icons/gary-lyn.png">
   </head>
   <body>
 
+    <!-- Hero section -->
     <header class="hero-section">
       <div class="hero-dark-cover"></div>
       <div class="hero-content">
@@ -18,13 +19,50 @@
           <span class="hero-support-text">Turning houses into homes with timeless furniture</span>
 
           <div class="hero-buttons">
-            <button class="hero-button">Buy Now</button>
-            <button class="hero-button">Contact Us</button>
+            <button id="buy-now-button" class="hero-button">Buy Now</button>
+            <button id="contact-us-button" class="hero-button">Contact Us</button>
           </div>
 
         </div>
       </div>
     </header>
+
+    <!-- Contact us section -->
+    <div id="absolute-dark-cover"></div>
+    <div id="contact-us-section">
+      <button id="contact-us-close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+      </button>
+      <div class="contact-us-image-wrapper">
+        <img class="contact-us-image" src="images/gary-lyn-building.jpg" alt="">
+      </div>
+      <div class="contact-us-content">
+        <h2 class="contact-us-content-title">Contact Us!</h2>
+        
+        <form class="contact-us-form">
+          <div class="contact-us-input-wrapper">
+            <label for="contact-us-name-input">Name:</label>
+            <input class="contact-us-input" id="contact-us-name-input" type="text" placeholder="Your full name" required>
+          </div>
+
+          <div class="contact-us-input-wrapper">
+            <label for="contact-us-email-input">Email:</label>
+            <input class="contact-us-input" id="contact-us-email-input" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="contact-us-input-wrapper">
+            <label for="contact-us-message-input">Message:</label>
+            <textarea class="contact-us-input contact-us-textarea" id="contact-us-message-input" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <button type="submit" class="contact-us-submit-button">Send Message</button>
+        </form>
+      </div>
+
+    </div>
 
   </body>
 </html>
