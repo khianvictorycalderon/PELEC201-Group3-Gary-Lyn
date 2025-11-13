@@ -3,7 +3,7 @@
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Gary-Lyn: Lirio's House of Decor</title>
     <link rel="icon" href="icons/gary-lyn.png">
   </head>
@@ -19,8 +19,8 @@
           <span class="hero-support-text">Turning houses into homes with timeless furniture</span>
 
           <div class="hero-buttons">
-            <button class="hero-button">Buy Now</button>
-            <button class="hero-button">Contact Us</button>
+            <button id="buy-now-button" class="hero-button">Buy Now</button>
+            <button id="contact-us-button" class="hero-button">Contact Us</button>
           </div>
 
         </div>
@@ -28,8 +28,8 @@
     </header>
 
     <!-- Contact us section -->
-    <div class="absolute-dark-cover"></div>
-    <div class="contact-us-section">
+    <div id="absolute-dark-cover"></div>
+    <div id="contact-us-section">
       <button id="contact-us-close-button">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
           <line x1="19" y1="12" x2="5" y2="12"/>

@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1.25rem;
 }
 
-.absolute-dark-cover {
+#absolute-dark-cover {
     position: fixed;
     top: 0;
     left: 0;
@@ -87,14 +87,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100vw;
     z-index: 50;
     background-color: rgba(0, 0, 0, 0.6);
-    display: none; /* Temporary hide this dark cover to absolutely everything */
+    transition: 1s;
+    display: none;
 }
 
 /* Contact Us Section - Mobile First */
-.contact-us-section {
+#contact-us-section {
   position: fixed;
   top: 50vh;
-  left: 50vw;
   transform: translate(-50%, -50%);
   z-index: 60;
   background-color: white;
@@ -104,8 +104,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   max-height: 85vh;
-  overflow: hidden; /* Prevent image/content overflow */
+  overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: 1s ease-in-out;
+  left: -100vw; /* Temporarily hide's these for the animation */
 }
 
 .contact-us-image-wrapper {
@@ -146,12 +148,12 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     cursor: pointer;     
     padding: 0;            
-    transition: 0.2s, color 0.2s; /* Smooth hover */
+    transition: 0.2s, color 0.2s;
 }
 
 #contact-us-close-button:hover {
-    background: #1e5631;     /* Fill on hover */
-    color: white;          /* Arrow turns white */
+    background: #1e5631;
+    color: white;
 }
 
 #contact-us-close-button svg {
@@ -219,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0.75rem 4rem 0.75rem 4rem;
         font-size: 0.875rem;
     }
-    .contact-us-section {
+    #contact-us-section {
         width: 80%;
         max-height: 90vh;
     }
@@ -254,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0.75rem 6rem 0.75rem 6rem;
         font-size: 1rem;
     }
-     .contact-us-section {
+    #contact-us-section {
         flex-direction: row;
         align-items: stretch;
         width: 70%;
