@@ -66,3 +66,13 @@ function handleSubmit(e) {
   // Optionally clear the form
   e.target.reset();
 }
+
+const hamburgerBtn = document.getElementById("hamburger-btn");
+
+hamburgerBtn.addEventListener("click", () => {
+  alert("Button Clicked!")
+});
+
+// Close menu when clicking overlay
+navOverlay.addEventListener("click", () => {
+});
