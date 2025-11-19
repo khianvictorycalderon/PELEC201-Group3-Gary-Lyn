@@ -430,24 +430,26 @@ background-color: #14521f;
   }
 }
 
+
 .desktop-service-page,
 .desktop-service-page * {
   box-sizing: border-box;
 }
 .desktop-service-page {
   background: #ffffff;
-  height: 2544px;
+  height: 2256px;
   position: relative;
   overflow: hidden;
 }
 .pexels-proudlyswazi-33095902-1 {
-  width: 1950px;
-  height: 1011px;
+  width: 100%;
+  height: 1061px;
   position: absolute;
-  left: -211px;
-  top: 71px;
+  left: 0;
+  top: 21px;
+  display: flex;
   object-fit: cover;
-  aspect-ratio: 1950/1011;
+  aspect-ratio: 100%/1061;
 }
 .rectangle-67 {
   background: linear-gradient(
@@ -455,11 +457,11 @@ background-color: #14521f;
     rgba(0, 0, 0, 0) 0%,
     rgba(255, 255, 255, 0.92) 58.65384340286255%
   );
-  width: 1440px;
-  height: 1011px;
+  width: 100%;
+  height: 1061px;
   position: absolute;
   left: 0px;
-  top: 71px;
+  top: 21px;
 }
 .services {
   color: #1e5631;
