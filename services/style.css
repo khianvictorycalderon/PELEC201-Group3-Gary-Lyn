@@ -963,6 +963,14 @@ background-color: #14521f;
   position: absolute;
   left: 205px;
   top: 2128px;
+  border-radius: 25px;
+  border: 2px solid #173e24;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .rectangle-64 {
   border-radius: 25px;
@@ -991,14 +999,22 @@ background-color: #14521f;
   align-items: center;
   justify-content: flex-end;
 }
-.learn-button2 {
+.contact-button {
   width: 225px;
   height: 64px;
   position: absolute;
   left: 1010px;
   top: 2128px;
+  border-radius: 25px;
+  border: 2px solid #173e24;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.learn-more2 {
+.contact-us {
   color: #173e24;
   text-align: right;
   font-family: "Inter-Medium", sans-serif;
