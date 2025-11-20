@@ -311,6 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-content-bg {
+  display: none;
   background: white;
 }
 
@@ -328,7 +329,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Tablet display */
 @media (min-width: 768px) {
-
+  .section-content-bg {
+    display: block;
+  }
 }
 
 /* Desktop display */
