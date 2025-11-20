@@ -1,0 +1,296 @@
+/* CSS Design: Mobile first approach, then climbing up to tablet then desktop */
+
+body {
+    background:rgb(29, 29, 29);
+    color:white;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+/* NAVBAR STYLE STARTS HERE */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, #0a3d1c, #0f6625);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+/* LOGO */
+.navbar .logo {
+  position: absolute;
+  left: 20px;   
+  display: flex;
+  align-items: center;  
+}
+
+.logo img {
+  height: 60px;   
+  width: auto;
+}
+
+/* NAV LINKS CONTAINER */
+.navbar .nav-links {
+  list-style: none;  
+  margin: 0;        
+  padding: 0;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* INDIVIDUAL LINK STYLE */
+.navbar .nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* closer spacing between icon and label */
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.navbar .nav-links a:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* SVG ICON STYLE */
+.navbar .nav-links a svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+#navbar-links {
+  display: none;
+}
+
+#nav-overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 900;
+  background: rgba(0, 0, 0, 0.618);
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+#mobile-close-button {
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#mobile-close-button:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  #mobile-close-button {
+    display: none; /* Hides the close button for tablet and desktop */
+  }
+  #navbar-links {
+    display: flex;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    gap: 20px;
+  }
+  .navbar .nav-links a {
+    font-size: 16px;
+  }
+}
+
+/* Hamburger button - hidden by default */
+.hamburger {
+  position: absolute;
+  right: 20px;  
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 50px;
+    left: 0%;
+    width: 100%;
+    background-color: #0a3d1c;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    transition: 0.3s;
+    z-index: 1000;
+    height: fit-content;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; 
+  }
+}
+/* NAVBAR STYLE ENDS HERE */
+
+/* FOOTER STYLE STARTS HERE */
+.footer {
+  background: linear-gradient(90deg, #0a3d1c, #0f6625);
+  color: #fff;
+  padding: 50px 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 300px;
+  margin-bottom: 1px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 2px;
+}
+
+.footer-icons img {
+  width: 70px;
+  height: 70px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover img {
+  transform: scale(1.15);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+.footer-right {
+  flex: 2 1 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 25px 40px;
+  width: 100%;
+  max-width: 650px;
+}
+
+
+.footer-column h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #9be37f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .footer-box {
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+  }
+}
+/* FOOTER STYLE ENDS HERE */
+
+/* ABOUT CONTENT STYLE STARTS HERE */
+    /* Put your actual style codes here */
+/* ABOUT CONTENT STYLE ENDS HERE */
