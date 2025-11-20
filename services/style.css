@@ -335,12 +335,12 @@ h1, h2, h3, h4, h5, h6 {
   border: solid 1px green;
   position: absolute;
   width: auto;
-  height: auto;
+  height: 100%;
   padding-left: 6rem;
   padding-right: 6rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Tablet display */
