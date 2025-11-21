@@ -292,5 +292,59 @@ h1, h2, h3, h4, h5, h6 {
 /* FOOTER STYLE ENDS HERE */
 
 /* ABOUT CONTENT STYLE STARTS HERE */
-    /* Put your actual style codes here */
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+}
+
+.about-left-white-bg {
+  flex: 1;
+  background: white;
+  height: auto;
+  display: none;
+}
+
+.about-right-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  background: linear-gradient(90deg, white, rgba(0, 0, 0, 0));
+  z-index: 50;
+}
+
+.about-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  z-index: 100;
+}
+
+.about-right-picture {
+  flex: 1;
+  height: auto;
+  background-image: url("images/gary-lyn-building.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Tablet Display */
+@media (min-width: 768px) {
+  .about-left-white-bg {
+    display: block;
+  }
+}
+
+/* Desktop Display */
+@media (min-width: 1024px) {
+  
+}
 /* ABOUT CONTENT STYLE ENDS HERE */
