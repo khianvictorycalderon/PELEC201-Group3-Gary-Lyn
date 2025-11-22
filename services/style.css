@@ -292,6 +292,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* SERVICES SECTION STARTS HERE */
 
+.services-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #1E5631;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+
+.services-descrip {
+  font-size: 1.50rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: #000000;
+  position: absolute;
+  width: 250%;
+  height: 10%;
+  left: 50%;
+  top: 35%;
+}
+
 /* Default is mobile display*/
 
 .service-bg-1 {
