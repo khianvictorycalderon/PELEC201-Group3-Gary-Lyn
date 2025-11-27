@@ -319,7 +319,6 @@ h1, h2, h3, h4, h5, h6 {
 .services-section {
   background-color: white;
   color: black;
-  min-height: 100vh;
   z-index: 5;
   position: relative;
   margin: 0;
@@ -382,22 +381,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .services-section-1-title {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 800;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #1E5631;
 }
 
 .services-section-1-description {
-  font-size: 1.50rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-top: 0.5rem;
 }
 
+.services-section-services-icons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.services-section-services-icons > .item {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.services-section-services-icons > .item > img {
+  min-width: 30px;
+  height: auto;
+}
+
+.services-section-services-icons > .item > p {
+  font-size: 0.8rem;
+}
 
 /* TABLET DISPLAY */
 @media (min-width: 768px) {
+  .services-section {
+    min-height: 100vh;
+  }
   .services-section-bg {
     width: 30%;
   }
@@ -407,6 +431,21 @@ h1, h2, h3, h4, h5, h6 {
   .services-section-content {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  .services-section-1-title {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .services-section-1-description {
+    font-size: 1.25rem;
+  }
+  .services-section-services-icons > .item > img {
+    min-width: 40px;
+    height: auto;
+  }
+  .services-section-services-icons > .item > p {
+    font-size: 0.9rem;
   }
 }
 /* DESKTOP DISPLAY */
@@ -420,6 +459,21 @@ h1, h2, h3, h4, h5, h6 {
   .services-section-content {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+  .services-section-1-title {
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .services-section-1-description {
+    font-size: 1.5rem;
+  }
+  .services-section-services-icons > .item > img {
+    min-width: 50px;
+    height: auto;
+  }
+  .services-section-services-icons > .item > p {
+    font-size: 1rem;
   }
 }
 
