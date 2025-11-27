@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 0%;
   height: 100%;
   z-index: 10;
 }
@@ -344,18 +344,34 @@ h1, h2, h3, h4, h5, h6 {
 .about-content-subheading {
   margin-top: 2rem;
   color: #1e5631;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-style: italic;
+}
+
+.about-content-paragraph {
+  color: #1e5631;
+  text-align: justify;
+  line-height: 1.5;
+
+  width: 100%;
+  letter-spacing: 0.75px;
+  word-spacing: 1.5px;
+  font-size: 1rem;
 }
 
 /* TABLET DISPLAY */
 @media (min-width: 768px) {
   .about-bg {
-    width: 70%;
+    width: 35%;
   }
   .about-content {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  .about-content-paragraph {
+    width: 80%;
+    letter-spacing: 1.25px;
+    word-spacing: 2px;
   }
 }
 
@@ -369,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
   .about-content-title {
-    margin-left: 20rem;
+    margin-left: 16rem;
   }
   .about-bg {
     width: 50%;
@@ -378,7 +394,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.75rem;
   }
   .about-content-subheading {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+  .about-content-paragraph {
+    width: 60%;
+    font-size: 1.125rem;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
   }
 }
 /* ABOUT CONTENT STYLE ENDS HERE */
