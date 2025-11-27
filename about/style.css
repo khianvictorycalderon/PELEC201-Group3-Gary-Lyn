@@ -302,7 +302,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-content {
   position: relative;
-  padding: 6rem;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   z-index: 30;
 }
 
@@ -329,15 +331,39 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(90deg, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
 
+.about-content-title-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.about-content-title {
+  color: #1e5631;
+  font-size: 1.75rem;
+}
+
 /* TABLET DISPLAY */
 @media (min-width: 768px) {
   .about-bg {
     width: 70%;
   }
+  .about-content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 /* DESKTOP DISPLAY */
 @media (min-width: 1024px) {
+  .about-content {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .about-content-title-wrapper {
+    text-align: left;
+  }
+  .about-content-title {
+    margin-left: 20rem;
+  }
   .about-bg {
     width: 50%;
   }
