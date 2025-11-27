@@ -338,7 +338,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-content-title {
   color: #1e5631;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+}
+
+.about-content-subheading {
+  margin-top: 2rem;
+  color: #1e5631;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 /* TABLET DISPLAY */
@@ -366,6 +373,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .about-bg {
     width: 50%;
+  }
+  .about-content-title {
+    font-size: 1.75rem;
+  }
+  .about-content-subheading {
+    font-size: 1.25rem;
   }
 }
 /* ABOUT CONTENT STYLE ENDS HERE */
