@@ -324,11 +324,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.services-section-content {
+.services-section-1-content {
   position: relative;
   z-index: 20;
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
@@ -371,6 +371,10 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(-90deg, white, rgba(0, 0, 0, 0));
 }
 
+.text-center {
+  text-align: center;
+}
+
 .services-section-bg-mask {
   position: absolute;
   z-index: 15;
@@ -388,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #1E5631;
 }
 
-.services-section-1-description {
+.services-section-description {
   font-size: 1rem;
   font-weight: 500;
   margin-top: 0.5rem;
@@ -444,6 +448,17 @@ h1, h2, h3, h4, h5, h6 {
   height: 35px;
 }
 
+.services-section-2-content {
+  position: relative;
+  z-index: 20;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 /* TABLET DISPLAY */
 @media (min-width: 768px) {
   .services-section {
@@ -452,10 +467,11 @@ h1, h2, h3, h4, h5, h6 {
   .services-section-bg {
     width: 30%;
   }
-  .services-section-content {
+  .services-section-1-content {
     width: 80%;
+    padding-bottom: 6rem;
   }
-  .services-section-content {
+  .services-section-1-content, .services-section-2-content {
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -464,7 +480,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  .services-section-1-description {
+  .services-section-description {
     font-size: 1.25rem;
   }
   .services-section-services-icons > .item > img {
@@ -480,16 +496,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 25%;
     margin-top: 2rem;
   }
+  .services-section-2-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 /* DESKTOP DISPLAY */
 @media (min-width: 1024px) {
   .services-section-bg {
     width: 50%;
   }
-  .services-section-content {
+  .services-section-1-content {
     width: 60%;
   }
-  .services-section-content {
+  .services-section-1-content, .services-section-2-content {
     padding-left: 6rem;
     padding-right: 6rem;
   }
@@ -498,7 +518,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .services-section-1-description {
+  .services-section-description {
     font-size: 1.5rem;
   }
   .services-section-services-icons > .item > img {
@@ -512,6 +532,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.15rem;
     padding: 1rem;
     margin-top: 3rem;
+  }
+  .services-section-2-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 
