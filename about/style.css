@@ -298,6 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background-color: white;
   color: black;
+  margin: 0;
 }
 
 .about-content {
@@ -305,6 +306,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 2rem;
   z-index: 30;
 }
 
@@ -359,6 +361,39 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
+.about-content-specialties {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #1e5631;
+  width: 100%;
+}
+
+.about-content-specialties > div {
+  flex: 1;
+  padding: 1.25rem;
+  background-color: #e2e2e2;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.221)
+}
+
+.about-content-specialties-title {
+  font-size: 1.15rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.about-content-specialties-description {
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.about-content-specialties-image-wrapper {
+  text-align: center;
+}
+
 /* TABLET DISPLAY */
 @media (min-width: 768px) {
   .about-bg {
@@ -372,6 +407,18 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%;
     letter-spacing: 1.25px;
     word-spacing: 2px;
+  }
+  .about-content-specialties {
+    width: 80%;
+  }
+  .about-content-specialties {
+    flex-direction: row;
+  }
+  .about-content-specialties-description {
+    font-size: 1rem;
+  }
+  .about-content-specialties-title {
+    font-size: 1.25rem;
   }
 }
 
@@ -401,6 +448,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.125rem;
     letter-spacing: 1.5px;
     word-spacing: 3px;
+  }
+  .about-content-specialties {
+    width: 60%;
+  }
+  .about-content-specialties-description {
+    font-size: 1.15rem;
+  }
+  .about-content-specialties-title {
+    font-size: 1.5rem;
   }
 }
 /* ABOUT CONTENT STYLE ENDS HERE */
