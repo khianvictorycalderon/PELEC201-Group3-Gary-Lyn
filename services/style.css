@@ -332,8 +332,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-sizing: border-box;
   width: 100%;
-  margin: 0;
 }
 
 .truck-bg {
