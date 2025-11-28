@@ -368,6 +368,7 @@ body {
 }
 
 .products-title {
+  display: none;
   font-family: "Istok Web", sans-serif;
   font-size: 22px;
   font-weight: 600;
