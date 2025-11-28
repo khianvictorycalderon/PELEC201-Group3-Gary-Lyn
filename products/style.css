@@ -460,11 +460,11 @@ h1 {
 }
 
 .banner-text {
-    position: absolute;
-    top: 10%;            
-    left: 30%;           
-    color: #1a1a1a;
-    width: 70%;          
+  position: absolute;
+  top: 20%;            
+  left: 5%;           
+  color: #1a1a1a;
+  width: 100%;          
 }
 
 .banner-text .title {
@@ -619,6 +619,11 @@ body {
   }
   .left-banner img {
     max-height: 400px;
+  }
+  .banner-text {
+    top: 10%;            
+    left: 30%;        
+    width: 70%;          
   }
 }
 
