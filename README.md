@@ -6,7 +6,7 @@ This project is a modern and fully responsive online furniture shop designed to 
 
 
 ## 🚀 Features
-![Homepage Preview](images/assets/Homepage.png)
+![Homepage Preview](images/Homepage.png)
 ### 🏠 Homepage 
 The homepage of the furniture website is designed to create a strong first impression by blending modern aesthetics with a warm, inviting atmosphere.
 
@@ -16,7 +16,7 @@ The homepage of the furniture website is designed to create a strong first impre
 
 - **Button Styling:** Buttons are designed with rounded edges (border-radius), a clean white background, and subtle drop shadows to encourage clicking.
 
- ![About Preview](images/assets/About.png)
+ ![About Preview](images/About.png)
 ### ℹ️ About Page
 This webpage utilizes a clean, modern design aesthetic focused on high readability and a clear visual hierarchy, reinforcing the brand identity of Garylyn Furniture.
 
@@ -24,7 +24,7 @@ This webpage utilizes a clean, modern design aesthetic focused on high readabili
 
 * **Visual Grounding:** The page integrates a faded, wide-format image of the **physical store exterior** (Garylyn Furniture) as a background element, linking the digital presence to the real-world business location.
 
-![Products Preview](images/assets/Products1.png)
+![Products Preview](images/Products1.png)
 ### 🪑 Products Page
 This page is your straightforward guide to viewing and discovering the quality cabinets, tables, and beds that make up the Garylyn Furniture collection.
 
@@ -32,7 +32,7 @@ This page is your straightforward guide to viewing and discovering the quality c
 
 * **Product Detail Display:** Dimensions are listed below each item where applicable providing immediate, essential product information to the user.
   
-![Services Preview](images/assets/Services2.png)
+![Services Preview](images/Services2.png)
 ### 🚚 Services Page
 This page is designed to reassure customers by highlighting the simple, reliable, and hassle-free support provided after making a purchase.
 
