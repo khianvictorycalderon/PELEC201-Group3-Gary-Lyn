@@ -290,6 +290,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 25px;
   }
 }
+/*  DESKTOP FOOTER TEXT SCALING (1024px up) */
+@media (min-width: 1024px) {
+  
+  .footer-column h3 {
+    font-size: 1.3rem; 
+    margin-bottom: 20px; 
+  }
+
+  .footer-column a {
+    font-size: 1.1rem; 
+  }
+
+  .footer-copy {
+    font-size: 1rem; 
+  }
+
+  .footer-logo {
+    width: 250px; 
+  }
+}
 /* FOOTER STYLE ENDS HERE */
 
 /* PRODUCTS CONTENT STYLE STARTS HERE */
