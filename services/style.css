@@ -437,6 +437,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.85rem;
   margin-left: 25%;
   margin-top: 1rem;
+  width: fit-content;
 }
 
 .explore-services-button:hover {
@@ -514,6 +515,11 @@ h1, h2, h3, h4, h5, h6 {
   .services-section-1-content, .services-section-2-content {
     padding-left: 3rem;
     padding-right: 3rem;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .services-section-1-title {
     font-size: 3rem;
