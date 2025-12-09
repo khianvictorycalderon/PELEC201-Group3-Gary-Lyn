@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 /* LOGO */
 .navbar .logo {
   position: absolute;
-  left: 70px;   
+  left: 20px;   
   display: flex;
   align-items: center;  
 }
@@ -80,6 +80,42 @@ h1, h2, h3, h4, h5, h6 {
   stroke-width: 2;
 }
 
+#navbar-links {
+  display: none;
+}
+
+#nav-overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 900;
+  background: rgba(0, 0, 0, 0.618);
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+#mobile-close-button {
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#mobile-close-button:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  #mobile-close-button {
+    display: none; /* Hides the close button for tablet and desktop */
+  }
+  #navbar-links {
+    display: flex;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .navbar .nav-links {
@@ -93,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hamburger button - hidden by default */
 .hamburger {
   position: absolute;
-  right: 70px;  
+  right: 20px;  
   top: 50%;
   transform: translateY(-50%);
   display: block;
@@ -114,24 +150,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile menu styles */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    justify-self: end;
-    
-  }
-
   .nav-links {
     position: static;
     top: 50px;
-    right: -100%;
-    height: calc(100vh - 50px);
-    width: 70%;
+    left: 0%;
+    width: 100%;
     background-color: #0a3d1c;
     flex-direction: column;
-    gap: 20px;
+    gap: 0.5rem;
     padding: 2rem;
     transition: 0.3s;
     z-index: 1000;
+    height: fit-content;
   }
 
   .nav-links.active {
@@ -139,11 +169,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .nav-links li {
-    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .nav-links a {
     font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; 
   }
 }
 
@@ -169,7 +206,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-content {
     position: relative;
-    display: block;
     color: white;
     z-index: 10;
     height: 100%;
@@ -531,5 +567,25 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 25px;
     padding: 25px;
+  }
+}
+/*  DESKTOP FOOTER TEXT SCALING (1024px up) */
+@media (min-width: 1024px) {
+  
+  .footer-column h3 {
+    font-size: 1.3rem; 
+    margin-bottom: 20px; 
+  }
+
+  .footer-column a {
+    font-size: 1.1rem; 
+  }
+
+  .footer-copy {
+    font-size: 1rem; 
+  }
+
+  .footer-logo {
+    width: 250px; 
   }
 }
