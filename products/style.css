@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
   z-index: 1000;
-  padding: 0 30px;
+  padding: 1 30px;
 }
 
 /* LOGO */
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;        
   padding: 0;
   display: flex;
-  gap: 60px;
+  gap: 40px;
   align-items: center;
   position: absolute;
   right: 140px;
